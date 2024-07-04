@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list {
+    list-style-type: none;
+    width: 100%;
+    position: fixed;
+    color: white;
+    background-color: #FFD3B6;
+    padding: 0;
+    margin: 0;
+    top: 0;
+  }
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+li a:hover{
+    background-color: #101914;
+}
+
+h1{
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+    font-size: 10rem;
+    font-family: 'Sacramento', cursive;
+    color:black;
+    margin:0;
+    padding:13rem 8rem 0 8rem;
+ }
+
+.acdc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    padding:3rem 3rem 5rem 3rem;    
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#home>div{
+    background:url(./images/340082-Samurai-Fantasy-Torii-Japanese-Gate.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+}
+
+.abt{
+      
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:#FFF8CB ;
+    margin:0;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.abt>h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.abt>p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    padding-left: 15rem;
+    text-align: justify;
+    width: 500px;
+}
+
+.abt>img{
+    width: 250px;
+    grid-row-start: span 2;
+}
+
+@media(max-width:1200px){
+    .abt{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .abt>p{
+        padding-left:0;
+        margin-top:1rem;
+        width:350px;
+    }
+}
+
+.exp{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5rem;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.exp>h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.exp>ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 4rem;
+}
+
+.ulul>h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ulul>li{
+    font-size: 1rem;
+}
+
+.ulul>hr{
+    margin: 50px;
+    width: 60%;
+    border: dotted #6b775c 6px;
+    border-bottom: none;
+}
+
+@media(max-width:1200px){
+    .exp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .exp>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        }
+}
+
+.grind>h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+}
+
+.work img{
+    height: 180px;
+    width: 300px;
+    border: dotted white 6px;
+    padding: 0.6rem;
+    overflow: hidden;
+}
+
+.work-done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.work-done h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+.work-done p{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    width: 350px;
+    margin-left: 1.2rem;
+}
+
+.grind{
+    background: linear-gradient(300deg, #0e120f, #6b775c, #0e120f);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding-bottom:5rem;
+}    
+/*3f4d3c
+6b775c
+a0a885
+0e120f*/
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    h2{
+        font-size: 5rem;
+        padding: 2rem 0 0.5rem 0;
+    }
+    
+    p{
+        font-size: 2rem;
+    }
+}
+
+.bottom-cont{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 100%
+}
+
+.top-cont{
+    background: linear-gradient(300deg, #0e120f, #6b775c, #0e120f);
+    background-size: 180% 180%;
+    animation: gradient-animation 14s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.bottom-cont{
+    background: linear-gradient(300deg, #0e120f, #6b775c, #0e120f);
+    background-size: 180% 180%;
+    animation: gradient-animation 14s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.line{
+    border: 1.5px solid white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #898C6D;
+}
